@@ -3,10 +3,10 @@
 /**
  * FileName: app.js
  * 
- * @author Tom Tsiliopoulos
- * @date August 3, 2016
+ * @author Tetiana Reznychenko
+ * @date August 4, 2016
  * 
- * StudentID: 300818557
+ * StudentID: 300870231
  * 
  * @description This file is the main javascript file for the web site
  */
@@ -17,7 +17,7 @@
 
     var canvas:HTMLElement;
     var stage:createjs.Stage;
-    var helloLabel:objects.Label;
+    var nameLabel:objects.Label;
 
     // app entry function
     function init():void {
@@ -30,14 +30,14 @@
     }
 
     function gameLoop():void {
-        helloLabel.rotation += 5;
+        nameLabel.rotation += -2.5;
         stage.update(); // refresh the stage container
     }
 
 
     function main():void {
-        helloLabel = new objects.Label("Hello World!", "40px Consolas","#000000", 160, 160, true);
-        stage.addChild(helloLabel);
+        nameLabel = new objects.Label("Tetiana", "40px Consolas","#000000", 160, 160, true);
+        stage.addChild(nameLabel);
     }
 
     // call init funciton when window finishes loading
